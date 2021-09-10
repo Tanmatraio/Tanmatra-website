@@ -6,6 +6,7 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
+    background-color: #fff;
   }
   
   
@@ -31,9 +32,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
+    /* min-width: 100%; */
+    max-width: 50%;
     height: 32rem;
   }
+  .carousel-white{
+    width: 800px;
+    background-color: #009688;
+  }
+  
   
   
   /* MARKETING CONTENT
@@ -57,7 +64,7 @@ body {
   ------------------------- */
   
   .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 4rem 0; /* Space out the Bootstrap <hr> more */
   }
   
   /* Thin out the marketing headings */
@@ -80,46 +87,56 @@ body {
     }
   
     .featurette-heading {
+      /* font-size: 50px; */
       font-size: 50px;
+      /* text-transform: uppercase; */
     }
   }
   
   @media (min-width: 62em) {
     .featurette-heading {
-      margin-top: 7rem;
+      /* margin-top: 7rem; */
+      margin-top: 2rem;
     }
   }
 
   /** custom **/
 
-  .card-img{
-    width: 120px;
-    height: 120px;
+  .card-img-top{
+    width: 90%;
+    height: 90%;
     align-self: center;
+    padding: 1rem;  
   }
+      
+  
+  /* .btn{
+    background-color: #009688 !important;
+    border-color: #009688 !important;
+  } */
 
-  .btn{
-    background-color: teal !important;
-    border-color: teal !important;
+  .tanmatra-exam-school{
+    column-gap: 10rem;
   }
 
   .navbar{
-    background-color: teal !important;
+    background-color: #009688 !important;
   }
 
   .card{
-    box-shadow: 2px 1px 3px 0px rgba(0,128,128,0.75);
-    -webkit-box-shadow: 2px 1px 3px 0px rgba(0,128,128,0.75);
-    -moz-box-shadow: 2px 1px 3px 0px rgba(0,128,128,0.75);
+    box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75);
+    -webkit-box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75);
+    -moz-box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75);
   }
 
   .hero-img{
     padding-right: 0px;
     padding-left: 0px;
-    margin-left: -75px;
+    /* margin-left: -75px; */
+    vertical-align: middle;
   }
 
-  .rotate {
+  /* .rotate {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
     -o-transform: rotate(15deg);
@@ -128,16 +145,28 @@ body {
     height: 550px;
     background-color: #fff;
     margin-right: 5px;
-    /* z-index: 1;   */
+    z-index: 1;   
     margin-top: -20px;
-  }
-  .hero-section, .hero-img, .hero-row{
+  } */
+  .hero-section, .hero-img{
     position: relative;
 
   }
   .hero-container{
+    margin-top: 32px;
     border: none;
     z-index: 9999 !important;
+    /* background-image: url(../images/bg-banner.svg); */
+  }
+
+  .hero-row{
+    height: calc(100vh - 90px);
+    /* border-bottom: 1px solid black; */
+    box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
+    -webkit-box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
+    -moz-box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
+    
+
   }
   .hero-text{
     position: relative;
@@ -148,6 +177,20 @@ body {
     box-shadow: 2px 1px 5px 0px rgba(0,128,128,0.75);
     -webkit-box-shadow: 2px 1px 5px 0px rgba(0,128,128,0.75);
     -moz-box-shadow: 2px 1px 5px 0px rgba(0,128,128,0.75);
-    /* height: 60px; */
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .featurette-image{
+    border-radius: 4px;
+  }
+
+  .brand-title{
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .accord-btn{
+    background-color: bg-light;
+    
   }
