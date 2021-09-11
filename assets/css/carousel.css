@@ -165,6 +165,10 @@ body {
     box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
     -webkit-box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
     -moz-box-shadow: 4px 1px 5px 0px rgba(66, 70, 70, 0.45);
+    /* box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75);
+    -webkit-box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75);
+    -moz-box-shadow: 2px 1px 3px 0px rgba(205, 233, 233, 0.75); */
+    
     
 
   }
