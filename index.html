@@ -12,44 +12,41 @@
     <!--link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/"-->
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--link href="../../dist/css/bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
-  <body style="background-color:bg-white;">
+  <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark justify-content-between fixed-top">
+      <nav class="navbar navbar-expand fixed-top">
         <div class="container">
-          <a class="navbar-brand brand-title" href="index.html">Tanmatra</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">Tanmatra</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tanmatra-navbar" aria-controls="tanmatra-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <!-- <ul class="navbar-nav mr-auto"> -->
+          <div class="collapse navbar-collapse justify-content-end" id="tanmatra-navbar">
             <div class="flex">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">School</a>
+                  <a class="nav-link" href="school.html">School</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Exam</a>
+                  <a class="nav-link" href="exam.html">Exam</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="partners.html">Partners</a>
+                  <a class="nav-link" href="partner.html">Partner</a>
                 </li>
               </ul>
             </div>
-            
-            <!-- <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
@@ -61,17 +58,17 @@
         <div class="row flex-lg-row-reverse align-items-center hero-row">
           
           <!-- <img src="assets/images/svg.svg" class="img-fluid" alt="Bootstrap Themes" width="1920" height="400" loading="lazy"> -->
-          <div class="hero-img col-12 col-sm-12 col-lg-6 text-center zoom-in-out-box">
-            <img src="assets/images/hero-image.png" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+          <div class="hero-img col-12 col-sm-12 col-lg-6">
+            <img src="assets/images/hero-image.png" class="img-fluid" alt="hero-image" loading="lazy">
           </div> 
           <!-- <div class="rotate hero-section"></div> -->
           <div class="hero-text col-lg-6">
-            <div class="mx-auto p-5">
+            <div class="mx-auto">
               <h1 class="display-5 fw-bold lh-1 mb-3 featurette-heading text-center">Learnings With Strong Foundation</h1>
               <!-- <h3 class="display-5 lh-1 mb-3">World class content created for you</h3> -->
               <p class="lead text-center"><b>Tanmatra</b> a place to learn, explore, create a solid foundation for an early learner and a competitive exam aspirant.</p>
-              <div class="d-grid text-center">
-                <a type="button" href="#faq-accordin" role="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More...</a>
+              <div class="d-grid text-center smooth-scroll">
+                <a type="button" href="#offer_section" role="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More...</a>
                 <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
               </div>
             </div>
@@ -81,8 +78,12 @@
         </div>
       </div>
       <!-- START THE FEATURETTES -->
+      <div class="p-3" id="offer_section"></div>
       <div class="container">
-        <h1 class="featurette-heading text-center py-5">What do we offer...</h1>
+        <!-- <div class="py-5" id="offer_section">        
+        </div> -->
+        <h1 class="featurette-heading text-center">What do we offer...</h1>
+        
         <hr class="featurette-divider">
         <div class="row featurette">
           <div class="col-md-7">
@@ -114,19 +115,19 @@
           </div>
         </div>
       </div>  
-        <hr class="featurette-divider">
+        <!-- <hr class="featurette-divider"> -->
 
         <!-- /END THE FEATURETTES-->  
       
       
-      <div class="container mt-5">
-        <h1 class="featurette-heading p-5 text-center">Our Platforms</h1>
+      <div class="container-fluid bg-light mt-5 p-5">
+        <h1 class="featurette-heading text-center py-2">Our Platforms</h1>
         <div class="card-deck tanmatra-exam-school">
           <div class="card">
-            <img class="card-img-top" src="assets/images/tanmatra-school1.png" alt="tanmatra-school">
+            <img class="card-img-top" src="assets/images/tanmatra-school_1.png" alt="tanmatra-school">
             <div class="card-body">
               <h3 class="card-title text-center">Tanmatra School</h3>
-              <p class="card-text lead text-center">Brings you the world class content for school education. Carefully crafted for the early learning.</p>
+              <p class="card-text text-justify">Brings you the world class content for school education. Carefully crafted for the early learning.</p>
               <div class="text-center pb-1">
                 <button type="button" class="btn btn-primary btn-lg">Learn with us</button>
               </div>
@@ -134,10 +135,10 @@
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="assets/images/tanmatra-exams1.png" alt="tanmatra-exam">
+            <img class="card-img-top" src="assets/images/tanmatra-exam11.png" alt="tanmatra-exam">
             <div class="card-body">
               <h3 class="card-title text-center">Tanmatra Exam</h3>
-              <p class="card-text lead text-center">Competitive exams with tanmatra, provides you 360 view of the exams and questions along with the solutions on demand.</p>
+              <p class="card-text text-justify">Competitive exams with tanmatra, provides you 360 view of the exams and questions along with the solutions on demand.</p>
               <div class="text-center pb-1">
                 <button type="button" class="btn btn-primary btn-lg">Prepare with us</button>
               </div>
@@ -148,58 +149,59 @@
       </div>
       
 
-      <hr class="featurette-divider">
+      <!-- <hr class="featurette-divider"> -->
         <!--How can we help section-->
-      <div class="container">
+      
+      <!--  -->
+      <div class="container d-grid gap-3">
         <h1 class="featurette-heading text-center mb-5"> How can we help you...</h1>
-        <div class="card-group">
-          <div class="card">
-            <img class="card-img-top" src="assets/images/School.svg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Schools</h5>
-              <p class="card-text">Provide a digital platform to cater entire educational needs of a school</p>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <div class="row row-cols-1 row-cols-md-4 ">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/icons8-school-128.png" class="card-img-top help-card-img p-1" alt="...">
+              <div class="card-body">
+                <h3 class="card-title text-center">Schools</h3>
+                <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="assets/images/Student.svg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Students</h5>
-              <p class="card-text">Provide readily available educational content in various formats with interactive content</p>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/icons8-student-128.png" class="card-img-top help-card-img p-1" alt="...">
+              <div class="card-body">
+                <h3 class="card-title text-center">Students</h3>
+                <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="assets/images/Parents.svg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Parents</h5>
-              <p class="card-text">Simple and easy progress report of students, can collaborate on platform as well.</p>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/icons8-defend-family-96.png" class="card-img-top help-card-img p-1" alt="...">
+              <div class="card-body">
+                <h3 class="card-title text-center">Parents</h3>
+                <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="assets/images/Partners.svg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Partners</h5>
-              <p class="card-text">Digital content creation and delivery, easy class management</p>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/icons8-partnership-64.png" class="card-img-top help-card-img p-1" alt="...">
+              <div class="card-body">
+                <h3 class="card-title text-center">Partners</h3>
+                <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
 
       <hr class="featurette-divider">
         
-      <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-
-        <g>
-         <title>Layer 1</title>
-         <path id="svg_2" d="m132.6,268.2c35,-37 145,-115 243.4,-150.2c106.6,-21.8 240.6,-26.8 304,51c51.6,63.2 75.6,133.2 60,220c-70.4,107.2 -185.4,74.2 -186,74c0.6,0.2 -40.6,46.8 -78,77c-37.4,30.2 -106.4,29.2 -163,29c-56.6,-0.2 -142.4,-45.8 -185,-124c-45.4,-103.8 -30.4,-139.8 4.6,-176.8z" stroke="#000" fill="#117575"/>
-        </g>
-       </svg>
+      
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-right"><a href="#" class="back-to-top">Back to top</a></p>
         <p>&copy; Tanmatra <script type="text/javascript">document.write( new Date().getFullYear() );</script> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     <!-- </main> -->

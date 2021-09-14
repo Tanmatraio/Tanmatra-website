@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family: paralucent,sans-serif; 
+    /* 'Roboto'; */
+    /* ,'Playfair Display', serif; */
+}
+.navbar {
+    /* padding: .5rem; */
+    background:#fff;
+    box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);    
+}
+
+.nav-link,
+.navbar-brand {
+    color: rgb(15, 2, 27);
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+
+.hero-row{
+    height: calc(100vh - 10px);
+    padding: 1rem;
+    box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);
+    
+   
+  }
+
+
+
+
+  .featurette-divider {
+    margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    /* .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    } */
+  
+    .featurette-heading {
+      /* font-size: 50px; */
+      font-size: 50px;
+      /* text-transform: uppercase; */
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      /* margin-top: 7rem; */
+      margin-top: 2rem;
+    }
+  }
+
+  .back-to-top{
+      /* position: fixed-bottom; */
+    position: fixed;
+    bottom: 10px;
+    float:right !important;
+  }
+
+
+  .tanmatra-exam-school{
+    width: 50%;
+    margin: auto;
+  }
+
+  .help-card-img{
+      width: 40%;
+      margin: auto;
+  }
+  
+  
+  .exam-grid{
+    grid-column-gap: 1rem;
+    justify-content: space-between;
+   
+  }
+ 
