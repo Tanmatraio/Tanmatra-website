@@ -161,7 +161,7 @@ body {
   }
 
   .button-1, .button-1:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   
