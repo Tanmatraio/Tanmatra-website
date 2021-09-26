@@ -200,11 +200,9 @@ body {
     justify-content: center;
    
   }
-  .comp-exam-grid{
+  /* .comp-exam-grid{
     grid-column-gap: 2rem;
-  
-
-  }
+  } */
 
   .button-1, .button-1:hover {
     text-decoration: none !important;
@@ -214,6 +212,10 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  .modal-lg{
+    max-width: 968px !important;
   }
 
 
