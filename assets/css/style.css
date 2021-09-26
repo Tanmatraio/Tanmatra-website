@@ -20,8 +20,10 @@ body {
     -moz-box-shadow: 1px 1px 2px 1px rgba(66, 70, 70, 0.45);    
 }
 
-
-
+/* .bg-gradient-tan {
+  background-image: linear-gradient(to right, rgba(248, 249, 250, 80), rgb(248, 249, 250));
+} */
+  
 .nav-link,
 .navbar-brand {
     color: #000;
@@ -115,6 +117,7 @@ body {
   
 
   /* max width 40em ends */
+  
   
   @media (min-width: 62em) {
     .featurette-heading {
